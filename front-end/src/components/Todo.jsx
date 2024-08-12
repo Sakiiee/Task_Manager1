@@ -101,9 +101,20 @@ const TodoTable = () => {
     setSelectedTodo(todo); 
   };
 
+  const handleLogout = () => {
+    // Remove the token from localStorage or any other authentication mechanism
+    localStorage.removeItem('authToken');
+    // Redirect to login page or perform any other action
+    window.location.href = '/login';
+  };
+
   return (
     <div className="todo-container">
-      <h2>Task List</h2>
+       <div className="header">
+        <h2>Task List</h2>
+        <button className="logout-button" onClick={handleLogout}>Logout</button>
+      </div>
+
       {editMode ? (
         <div className="form-container">
           <h3>Edit Task</h3>

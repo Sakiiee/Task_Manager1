@@ -110,3 +110,31 @@
   .todo-details strong {
     color: #555;
   }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #e60000;
+  }
+  
+  .logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.75);
+  }
+  
